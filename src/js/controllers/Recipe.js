@@ -1,4 +1,4 @@
-import { RecipeModel } from '../models/Recipe';
+import RecipeModel from '../models/Recipe';
 import RecipeView from '../views/RecipeView';
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
@@ -24,7 +24,7 @@ async function showRecipe(e) {
 
     await RecipeModel.fetchRecipe(id);
 
-    const recipe = RecipeModel.getReipe;
+    const recipe = RecipeModel.getRecipe();
 
     RecipeView.render(recipe);
   } catch (e) {
