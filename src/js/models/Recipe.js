@@ -1,5 +1,6 @@
 import { getJSON } from '../helpers/getJSON';
 import { baseURL } from '../config';
+
 const state = {
   recipe: {},
 };
